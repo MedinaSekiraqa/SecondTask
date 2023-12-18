@@ -1,0 +1,44 @@
+
+.nav a:active{
+    text-decoration: underline;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  
+  
+  .App-header {
+    background-color:rgb(250, 250, 250);
+    padding: 10px;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 30px;
+    
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: rgb(186, 179, 179);
+    font-size: 14px;
+    
+    
+  }
+  .navbar-item a:active {
+    color: black; 
+    text-decoration: underline;
+  }

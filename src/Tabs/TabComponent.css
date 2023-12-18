@@ -1,0 +1,27 @@
+.tab-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbf8fe;
+    padding: 10px;
+  }
+  
+  .headings {
+    display: flex;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tab {
+    padding: 10px 15px;
+    margin: 0 auto;
+    color: rgb(175, 173, 173);
+    cursor: pointer;
+    position: relative;
+    outline: none; /* Remove the focus outline */
+  }
+  
+  .tab:active {
+    border-bottom: 2px solid #fff;
+  }
+  
