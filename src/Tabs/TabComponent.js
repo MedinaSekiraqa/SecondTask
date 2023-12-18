@@ -30,8 +30,8 @@ const TabComponent = ({ tabData }) => {
               {tab.cards.map((card, cardIndex) => (
                 <div className="card" key={cardIndex}>
                   <h3>{card.title}</h3>
-                  <p>{`Price: ${card.price}`}</p>
-                  <p>{`Name: ${card.name}`}</p>
+                  <p>{` ${card.price}`}</p>
+                  <p>{` ${card.name}`}</p>
                   <button>{card.buttonText}</button>
                 </div>
               ))}
