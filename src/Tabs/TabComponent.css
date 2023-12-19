@@ -1,27 +1,141 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf8fe; 
+}
+
 .tab-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fbf8fe;
     padding: 10px;
   }
+  
   
   .headings {
     display: flex;
     flex: 1;
     text-align: center;
   }
+  @media screen and (max-width: 600px) {
+    .headings {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Center items horizontally */
+    }
+  }
   
   .tab {
     padding: 10px 15px;
-    margin: 0 auto;
+    margin: 5px;
     color: rgb(175, 173, 173);
     cursor: pointer;
     position: relative;
-    outline: none; /* Remove the focus outline */
+    outline: none; 
+    flex: 1;
   }
+  /* Media query për ekrane deri në 600px */
+@media screen and (max-width: 600px) {
+  .tab {
+    padding: 8px 12px; /* Zvogelo padding-in në ekranet më të vogla */
+    margin: 1px; /* Zvogelo margin-in në ekranet më të vogla */
+    font-size: 0.8em;  /* Zvogelo madhësinë e fontit në ekranet më të vogla */
+  }
+}
+/* Media query për ekrane nga 601px deri në 1024px (p.sh., tableta) */
+@media screen and (min-width: 1025px) {
+  .tab {
+    font-size: 0.8em;  
+    padding: 2px 2px; 
+    
+  }
+}
+
+
+
+
   
   .tab:active {
     border-bottom: 2px solid #fff;
   }
+  
+  
+
+  .card-container {
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    grid-template-columns: repeat(4, 1fr); /* Two columns */
+    gap: 20px; 
+    max-width: 1000px; /* Set a max-width to limit the size of the container */
+    margin: 0 auto; /* Center the container horizontally */
+
+    
+  }
+  /* Media query për ekrane me madhësi 768 piksela ose më pak */
+@media screen and (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(2, 1fr); /* Ndrysho në dy kolona për ekrane të vogla */
+  }
+}
+
+/* Media query për ekrane me madhësi 480 piksela ose më pak (për celularë) */
+@media screen and (max-width: 480px) {
+  .card-container {
+      grid-template-columns: 1fr; /* Ndrysho në një kolonë për celularë */
+  }
+}
+  
+  .card {
+    background-color: white;
+    border: 1px solid #fffafa;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    
+  }
+
+  /* Media query për ekrane me madhësi 600 piksela ose më pak */
+@media screen and (max-width: 600px) {
+  .card {
+      padding: 5px; /* Modifikoni sipas nevojës */
+      margin: 5px; /* Modifikoni sipas nevojës */
+  }
+}
+
+
+  
+  .card h3,
+  .card p {
+    margin: 5px 0;
+    
+  }
+ .title{
+    font-size:15px;
+    color: rgb(36, 36, 35);
+  }
+  .price{
+    font-size: 20px;
+    color: rgb(36, 36, 35);
+  }
+  .name{
+    color: grey;
+    font-size: small;
+  }
+  .card button {
+    background-color: white;
+    color: rgb(48, 175, 217);
+    padding: 5px 40px;
+    border: 1px solid rgb(48, 175, 217);
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   
+  }
+  
   

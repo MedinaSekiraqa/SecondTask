@@ -12,7 +12,7 @@ const TabComponent = ({ tabData }) => {
 
   return (
     <div>
-      <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
+      <Tabs  className="container" selectedIndex={selectedTab} onSelect={handleTabSelect}>
       <TabList className="tab-list">
         <div className='headings'>
             {tabData.map((tab, index) => (
@@ -26,12 +26,13 @@ const TabComponent = ({ tabData }) => {
 
         {tabData.map((tab, index) => (
           <TabPanel key={index}>
+
             <div className="card-container">
               {tab.cards.map((card, cardIndex) => (
                 <div className="card" key={cardIndex}>
-                  <h3>{card.title}</h3>
-                  <p>{` ${card.price}`}</p>
-                  <p>{` ${card.name}`}</p>
+                  <h3 className='title'>{card.title}</h3>
+                  <p className='price'>{` ${card.price}`}</p>
+                  <p className='name'>{` ${card.name}`}</p>
                   <button>{card.buttonText}</button>
                 </div>
               ))}
