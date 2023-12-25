@@ -1,0 +1,81 @@
+/* Default styles */
+.acordion {
+    width: 80%;
+    margin: auto;
+    padding: 10rem;
+}
+
+.item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.body {
+    padding: 20px; 
+    color: rgb(61, 62, 62);
+}
+
+.body-item {
+    padding-top: 30px;
+    display: flex;
+    
+    
+}
+
+.nested-accordion {
+    width: auto;
+    margin-left: 20px;
+    
+}
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .acordion {
+       
+        padding: 2rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .body {
+        padding: 10px;
+    }
+
+    .body-item {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .nested-accordion {
+        width: 100%;
+    }
+    
+    /* Move the accordion to the right side */
+    .acordion {
+        order: 1; /* Change the order of the flex item */
+    }
+}

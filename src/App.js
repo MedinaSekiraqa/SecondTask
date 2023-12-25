@@ -5,6 +5,10 @@ import Toogle from './Toogle';
 
 
 
+import Toogle3 from './Toggle3';
+
+
+
 function App() {
   return (
     <>
@@ -12,6 +16,10 @@ function App() {
       <Tab />
 
       <Toogle/>
+
+      
+
+      <Toogle3/>
 
     </>
   );
