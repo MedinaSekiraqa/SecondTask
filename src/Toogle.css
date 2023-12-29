@@ -1,7 +1,13 @@
 .acordian-container {
-  width: 80%;
+  width: 60vw;
   margin: auto;
   padding: 10rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .acordian-container {
+    width: 70vw;
+  }
 }
 
 .accordion-item {

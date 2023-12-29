@@ -10,14 +10,19 @@
     margin-bottom: 10px;
     overflow: hidden;
     padding: 15px;
-    
+}
+@media screen and (max-width: 768px) {
+    .item {
+        padding: 1px; /* Adjust padding for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
+        margin: auto; /* Center the item */
+    }
 }
 
 .header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    
 }
 
 .logo {
@@ -28,30 +33,28 @@
 }
 
 .body {
-    padding: 20px; 
+    padding: 20px;
     color: rgb(61, 62, 62);
 }
 
 .body-item {
     padding-top: 30px;
     display: flex;
-    
-    
 }
 
 .nested-accordion {
     width: auto;
     margin-left: 20px;
-    
 }
-
-
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .acordion {
-       
+        width: 50%; /* Full width on smaller screens */
         padding: 2rem;
+        order: 1;
+        flex-direction:column-reverse;
+        margin: auto;
     }
 
     .logo {
@@ -67,15 +70,18 @@
 
     .body-item {
         padding-top: 10px;
+        padding-top: 10px;
         flex-direction: column;
     }
 
     .nested-accordion {
         width: 100%;
+        margin-left: 0; 
     }
+
     
-    /* Move the accordion to the right side */
     .acordion {
-        order: 1; /* Change the order of the flex item */
+        
+        width: 90%;
     }
 }
