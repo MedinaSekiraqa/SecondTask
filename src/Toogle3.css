@@ -1,6 +1,6 @@
 /* Default styles */
 .acordion {
-    width: 80%;
+    width: 57%;
     margin: auto;
     padding: 10rem;
 }
@@ -50,7 +50,7 @@
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .acordion {
-        width: 50%; /* Full width on smaller screens */
+        width: 57%; /* Full width on smaller screens */
         padding: 2rem;
         order: 1;
         flex-direction:column-reverse;
