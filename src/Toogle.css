@@ -43,6 +43,7 @@
   .acordian-container {
       padding: 2rem;
       align-items: center;
+      width: 80%;
   }
   
   .accordion-header {

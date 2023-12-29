@@ -50,7 +50,7 @@
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .acordion {
-        width: 57%; /* Full width on smaller screens */
+        width: 80%; /* Full width on smaller screens */
         padding: 2rem;
         order: 1;
         flex-direction:column-reverse;
@@ -82,6 +82,6 @@
     
     .acordion {
         
-        width: 90%;
+        width: 80%;
     }
 }
